@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ffffff;
+  color: #000000;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Foco visível */
+a:focus, button:focus {
+  outline: 3px solid #00acee;
+  outline-offset: 2px;
+}
+
+/* Cabeçalho */
+header {
+  padding: 2rem;
+  background: #1f1f1f;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+}
+
+/* Botão contraste */
+#btn-contraste {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#btn-contraste:hover {
+  background: #666;
+}
+
+/* Foto perfil */
+.foto-perfil {
+  margin: 2rem 0;
+}
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+/* Conteúdo */
+main {
+  padding: 2rem;
+}
+main section {
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+}
+p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contato */
+.contato a {
+  color: #00acee;
+  text-decoration: none;
+}
+.contato a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background: #1f1f1f;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Tema Alto Contraste */
+body.alto-contraste {
+  background: #ffffff;
+  color: #000000;
+}
+body.alto-contraste header,
+body.alto-contraste footer {
+  background: #ffffff;
+  color: #000;
+}
+body.alto-contraste .avatar {
+  border-color: #000000;
+}
+body.alto-contraste a {
+  color: #0000ee;
+}
