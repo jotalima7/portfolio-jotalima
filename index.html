@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | João Pedro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Portfólio de João Pedro — futuro empresário, fã de futebol e séries."/>
+</head>
+<body>
+  <header class="topo" role="banner">
+    <nav class="nav" aria-label="Navegação primária">
+      <a class="brand" href="#inicio">JP</a>
+      <button id="toggle-contraste" class="btn" aria-pressed="false" title="Alternar alto contraste">Alto contraste</button>
+    </nav>
+    <section id="inicio" class="herobar" aria-labelledby="nome">
+      <img src="img/perfil.svg" alt="Retrato ilustrado de João Pedro" class="avatar" width="180" height="180">
+      <div>
+        <h1 id="nome">João Pedro</h1>
+        <p class="sub">Futuro <strong>empresário</strong>. Curto jogar bola e assistir uma série depois da escola.</p>
+        <ul class="tags" aria-label="Hobbies">
+          <li>⚽ Jogar bola</li>
+          <li>📺 Assistir séries</li>
+          <li>🎨 Cor preferida: preto</li>
+        </ul>
+        <a class="cta" href="mailto:joaopedroalveslima9@gmail.com">Fale comigo</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="conteudo" class="container" role="main">
+    <section class="grid" aria-label="Projetos e interesses">
+      <article class="card">
+        <img src="img/futebol.svg" alt="Pessoa jogando futebol" loading="lazy">
+        <div class="card-body">
+          <h2>Jogar bola</h2>
+          <p>Treino e me divirto com meus amigos — disciplina, trabalho em equipe e muita corrida!</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/series.svg" alt="Pessoa assistindo série na TV" loading="lazy">
+        <div class="card-body">
+          <h2>Assistir séries</h2>
+          <p>Depois da escola, relaxo assistindo episódios e aprendendo com boas histórias.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/negocios.svg" alt="Gráficos de negócios e laptop" loading="lazy">
+        <div class="card-body">
+          <h2>Futuro empresário</h2>
+          <p>Meu objetivo é abrir meu próprio negócio e evoluir como líder.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape" role="contentinfo">
+    <p>Contato: <a href="mailto:joaopedroalveslima9@gmail.com">joaopedroalveslima9@gmail.com</a></p>
+    <p>© 2025 João Pedro</p>
+  </footer>
+
+  <script>
+    // Alterna alto contraste (modo preto & branco)
+    const btn = document.getElementById('toggle-contraste');
+    btn?.addEventListener('click', () => {
+      const pressed = btn.getAttribute('aria-pressed') === 'true';
+      btn.setAttribute('aria-pressed', String(!pressed));
+      document.documentElement.classList.toggle('alto-contraste');
+    });
+  </script>
+</body>
+</html>
