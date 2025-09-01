@@ -1,44 +1,40 @@
-# Portfólio – João Pedro
+# Portfólio João Pedro
 
-Este é um portfólio pessoal simples desenvolvido com HTML, CSS e JavaScript. O site apresenta informações sobre João Pedro e inclui recursos de acessibilidade, como um botão para alternar o modo de alto contraste e navegação por teclado.
+Este é o portfólio pessoal de João Pedro, um futuro empresário apaixonado por tecnologia e empreendedorismo.
 
-## 📁 Estrutura do Projeto
+## Sobre
 
-/
-├── index.html # Página principal do portfólio
-├── style.css # Estilos do site
-├── script.js # Script para alternar contraste
-└── img/
-└── perfil-montanha.jpg # Foto de perfil
+No site, você encontra informações sobre João Pedro, seus hobbies (jogar bola e assistir séries), sua cor preferida (preto) e seus contatos.
 
-markdown
-Copiar código
+## Tecnologias utilizadas
 
-## 💡 Funcionalidades
+- HTML5
+- CSS3 (com tema de alto contraste e opções de acessibilidade)
+- JavaScript (para funcionalidades de acessibilidade)
 
-- Foto de perfil com estilo circular
-- Seções "Sobre mim" e "Contato"
-- Botão para alternar tema de **alto contraste**
-- Link de pular para o conteúdo para acessibilidade
-- Design responsivo e foco visível ao navegar com teclado
-
-## 🚀 Como Usar
+## Como usar
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-Abra o arquivo index.html em seu navegador.
+   git clone https://github.com/jotalima7/portfolio-jotalima.git
+Estrutura do projeto
+portfolio-jotalima/
+│
+├── images/              # Imagens usadas no site
+│   └── minha-foto.jpg
+├── index.html           # Página principal
+├── style.css            # Estilos CSS
+├── script.js            # Scripts JS para acessibilidade
+└── README.md            # Este arquivo
 
-♿ Acessibilidade
-Skip link funcional: Ir para o conteúdo
+Funcionalidades
 
-Contraste alto opcional
+Menu de acessibilidade para alternar o alto contraste e ajustar o tamanho da fonte
 
-Uso de aria-label e aria-pressed para leitores de tela
+Layout responsivo e simples
 
-Foco visível em links e botões
+Informações de contato com link de e-mail
 
-📬 Contato
-Você pode entrar em contato comigo pelo e-mail:
+Contato
 
-joaopedroalveslima9@gmail.com
+Email: joaopedroalveslima9@gmail.com
